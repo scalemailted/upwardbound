@@ -30,10 +30,12 @@ class Player extends Phaser.Physics.Arcade.Sprite
 		if (this.arrow_keys.left.isDown)
 		{
 			this.body.velocity.x = -this.speed;
+			this.flipX = true;
 		}
 		if (this.arrow_keys.right.isDown)
 		{
 			this.body.velocity.x = this.speed;
+			this.flipX = false;
 		}
 	}
 }
