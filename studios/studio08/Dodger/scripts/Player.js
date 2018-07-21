@@ -13,7 +13,7 @@ class Player extends Phaser.Physics.Arcade.Sprite
 		scene.physics.add.existing(this);
 		this.setCollideWorldBounds(true);
 
-		this.arrow_keys = scene.input.keyboard.addKeys('up,down,left,space');
+		this.arrow_keys = scene.input.keyboard.addKeys('up,down,left,right,space');
 	}
 	
 	move()
